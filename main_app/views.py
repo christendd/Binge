@@ -19,7 +19,8 @@ def accounts_list(request):
     return render(request, 'accounts/list.html', {'accounts': accounts})
 
 @login_required
-def watch(request):
+def watch(request, account_id):
+    account = Account.objects.get(id=account_id)
     movies = Movie.objects.all()
     return render(request, 'content/movie_list.html', {'movies': movies})
 

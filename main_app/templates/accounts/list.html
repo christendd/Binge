@@ -4,22 +4,13 @@
 <h1>Who's watching?</h1>
 
 {% for account in accounts %}
-
-<a href="{% url 'watch' account.id %}">
-            
-    <div class="account-content">
-        <p>
-            {{account.name}}
-        </p>
-    </div>
-
-    <div>
+<div class="card">
+    <a href="{% url 'watch' account.id %}">
+    <div class="card-content">
+        <span class="card-title">{{account.name}}</span>
         <a href="{% url 'accounts_update' account.id %}">Edit</a>
         <a href="{% url 'accounts_delete' account.id %}">Delete</a>
-      </div>
-</a>
-{% endfor %}
-
-
-
-{% endblock content %}
+    </div>
+    </a>
+</div>
+{% endfor %} {% endblock %}

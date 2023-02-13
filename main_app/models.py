@@ -22,7 +22,7 @@ class Movie(models.Model):
     title = models.CharField(max_length=250)
     genre = models.CharField(max_length=250)
     description = models.TextField()
-    poster = models.ImageField(upload_to='poster')
+    poster = models.CharField(max_length=250)
     account = models.ForeignKey(Account, on_delete=models.CASCADE)
 
 

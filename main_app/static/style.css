@@ -2,7 +2,28 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: lightslategray;
+  background-color: white;
+}
+
+.logo{
+  height: 95px;
+  margin-top: 10px;
+}
+
+
+
+/* Nav sytling */
+
+nav{
+height: 110px;
+background-color: white;
+border-color: grey;
+}
+
+.page-footer {
+  background-color: white;
+  color: #EF592B;
+  border-top: grey;
 }
 
 main {
@@ -13,3 +34,10 @@ footer {
   padding-top: 0;
   text-align: right;
 }
+
+
+
+.poster-image{
+  max-width: 200px;
+}
+

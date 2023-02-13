@@ -16,16 +16,18 @@
           <div class="nav-wrapper">
             <ul>
               <li>
-                <a href="/" class="left brand-logo"> Binge</a>
+                <a href="/" class="left brand-logo">
+                  <img class= "logo" src="{% static 'images/logo.png' %}" alt="logo">
+                </a>
               </li>
             </ul>
             <ul class="right">
               {% if user.is_authenticated %}
-              <li><a href="{% url 'create' %}">Add an Account</a></li>
-              <li><a href="{% url 'logout' %}">Log Out</a></li>
+              <li><a class= "white-text black" href="{% url 'create' %}">Add an Account</a></li>
+              <li><a class="white-text black" href="{% url 'logout' %}">Log Out</a></li>
               {% else %}
-              <li><a href="{% url 'login' %}">Log In</a></li>
-              <li><a href="{% url 'signup' %}">Sign Up</a></li>
+              <li><a class="white-text black" href="{% url 'login' %}">Log In</a></li>
+              <li><a class="white-text black" href="{% url 'signup' %}">Sign Up</a></li>
               {% endif %}
             </ul>
     </header>
