@@ -27,6 +27,7 @@ Fullstack Django app modeled after popular movie/tv streaming sites
 ![wireframes](/main_app/static/images/wireframes.png)
 
 ## Deployed Website
+https://binge.herokuapp.com/
 
 ## Future Enhancements
 - Add more content, having different tv/movies featured on list page
